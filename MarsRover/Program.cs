@@ -6,11 +6,9 @@ namespace MarsRover
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
-            //Rover myRover = new Rover(20);
-            //Console.WriteLine(myRover.ToString());
-
-
+            Console.WriteLine("Hello World!");
+            Rover myRover = new Rover(20);
+            Console.WriteLine(myRover.ToString());
         }
     }
 }
