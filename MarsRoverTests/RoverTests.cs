@@ -19,17 +19,17 @@ namespace MarsRoverTests
         [TestMethod] // Test 9
         public void ConstructorSetsDefaultModeTestNine()
         {
-            string mode = "NORMAL";
+            //string mode ="NORMAL";
             Rover newRoverMode = new Rover(default);
-            Assert.AreEqual(newRoverMode.Mode, mode);
+            Assert.AreEqual(newRoverMode.Mode, "NORMAL");
         }
 
         [TestMethod] // Test 10
         public void ConstructorSetsDefaultGeneratorWattsTestTen()
         {
-            double generatorWatts = 110;
+            //double generatorWatts = 110;
             Rover newRoverWatts = new Rover(default);
-            Assert.AreEqual(newRoverWatts.GeneratorWatts, generatorWatts);
+            Assert.AreEqual(newRoverWatts.GeneratorWatts, 110);
         }
 
         [TestMethod] // Test 11 
