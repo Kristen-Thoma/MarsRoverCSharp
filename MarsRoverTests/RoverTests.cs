@@ -9,7 +9,7 @@ namespace MarsRoverTests
     public class RoverTests
     {
         [TestMethod] // Test 8
-        public void ConstructorSetsDefaultPosition()
+        public void ConstructorSetsDefaultPositionTestEight()
         {
             int position = 98382;
             Rover newRoverPosition = new Rover(position);
@@ -17,7 +17,7 @@ namespace MarsRoverTests
         }
 
         [TestMethod] // Test 9
-        public void ConstructorSetsDefaultMode()
+        public void ConstructorSetsDefaultModeTestNine()
         {
             string mode = "NORMAL";
             Rover newRoverMode = new Rover(default);
@@ -25,7 +25,7 @@ namespace MarsRoverTests
         }
 
         [TestMethod] // Test 10
-        public void ConstructorSetsDefaultGeneratorWatts()
+        public void ConstructorSetsDefaultGeneratorWattsTestTen()
         {
             double generatorWatts = 110;
             Rover newRoverWatts = new Rover(default);
@@ -33,7 +33,7 @@ namespace MarsRoverTests
         }
 
         [TestMethod] // Test 11 
-        public void RespondsCorrectlyToModeChangeCommand()
+        public void RespondsCorrectlyToModeChangeCommandTestEleven()
         {
             // arrange 
             Rover rover = new Rover(default);
@@ -51,7 +51,7 @@ namespace MarsRoverTests
         }
 
         [TestMethod] // Test 12
-        public void DoesNotMoveInLowPower()
+        public void DoesNotMoveInLowPowerTestTwelve()
         {
             // arrange 
             Rover rover = new Rover(default)
@@ -72,7 +72,7 @@ namespace MarsRoverTests
         }
 
         [TestMethod] // Test 13 
-        public void PositionChangesFromMoveCommand()
+        public void PositionChangesFromMoveCommandTestThirteen()
         {
             // arrange 
             Rover rover = new Rover(default);

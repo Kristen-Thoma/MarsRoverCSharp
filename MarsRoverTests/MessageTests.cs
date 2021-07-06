@@ -10,13 +10,13 @@ namespace MarsRoverTests
         Command[] commands = { new Command("foo", 0), new Command("bar", 20) };
 
         [TestMethod] // Test 5
-        public void ArgumentNullExceptionThrownIfNameNotPassedToConstructor()
+        public void ArgumentNullExceptionThrownIfNameNotPassedToConstructorTestFive()
         {
             Assert.ThrowsException<ArgumentNullException>(() => new Message(default, default));           
         }
 
         [TestMethod] // Test 6
-        public void ConstructorSetsName()
+        public void ConstructorSetsNameTestSix()
         {
             string name = "Name";
             Message newMessage = new Message(name, default);
@@ -24,7 +24,7 @@ namespace MarsRoverTests
         }
 
         [TestMethod] // Test 7
-        public void ConstructorSetsCommandsField()
+        public void ConstructorSetsCommandsFieldTestSeven()
         {           
             Command[] commands = {};
             Message newMessage = new Message("foo", commands);

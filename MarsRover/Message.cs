@@ -6,7 +6,7 @@ namespace MarsRover
         public string Name { get; set; }
         public Command[] Commands { get; set; }
 
-        public Message(string name, Command[] commands) // Test 7
+        public Message(string name, Command[] commands) 
         {
             if (string.IsNullOrEmpty(name))
             {

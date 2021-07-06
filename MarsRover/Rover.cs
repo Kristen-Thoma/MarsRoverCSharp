@@ -7,7 +7,7 @@ namespace MarsRover
         public int Position { get; set; }
         public int GeneratorWatts { get; set; }
 
-        public Rover(int position) // Test 8 & 9 & 10
+        public Rover(int position) 
         {
             Position = position;
             Mode = "NORMAL";
@@ -19,7 +19,7 @@ namespace MarsRover
             return "Position: " + Position + " - Mode: " + Mode + " - GeneratorWatts: " + GeneratorWatts; 
         }
 
-        public void RecieveMessage(Message message) // Test 11 & 12 & 13
+        public void RecieveMessage(Message message)
         {
            foreach(var command in message.Commands)
             {
